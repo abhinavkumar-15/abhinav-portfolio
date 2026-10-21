@@ -3,7 +3,7 @@ export const siteConfig = {
   title: "Abhinav Kumar",
   description:
     "Abhinav Kumar is a Computer Science and Engineering undergraduate specializing in AI & Machine Learning at Sreyas Institute of Engineering and Technology, Hyderabad. Focused on Artificial Intelligence, Machine Learning, Deep Learning, Data Analytics, and Bioinformatics.",
-  url: "https://abhinavkumar.dev",
+  url: "https://abhinavkumar-dev.vercel.app",
   location: "Hyderabad, India",
   email: "pathiabhinavkumar@gmail.com",
   altEmail: "abhinavkumar4902@gmail.com",

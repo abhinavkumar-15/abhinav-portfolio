@@ -7,12 +7,13 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 [![Framer Motion](https://img.shields.io/badge/Framer_Motion-14.x-black?style=for-the-badge&logo=framer)](https://www.framer.com/motion/)
+[![Live Deployment](https://img.shields.io/badge/Live_Site-abhinavkumar--dev.vercel.app-000?style=for-the-badge&logo=vercel&logoColor=white)](https://abhinavkumar-dev.vercel.app)
 
 <p align="center">
   <strong>An editorial, typography-first personal portfolio engineered with 3D perspective transforms, tactile cursor physics, and deep contrast themes.</strong>
 </p>
 
-[Explore Live Demo](#-deployment) · [Features](#-features) · [Tech Stack](#-tech-stack) · [Getting Started](#-getting-started)
+[🌐 **Visit Live Portfolio**](https://abhinavkumar-dev.vercel.app) · [Features](#-features) · [Tech Stack](#-tech-stack) · [Getting Started](#-getting-started)
 
 </div>
 
@@ -66,7 +67,6 @@ Designed with restraint, typographic hierarchy, and museum-grade editorial care.
 │   │   └── ThemeContext.tsx # Persistent light/dark theme provider
 │   └── data/
 │       └── siteConfig.ts   # Single source of truth for all content & links
-├── netlify.toml            # Plug-and-play Netlify deployment config
 └── next.config.ts          # Turbopack & Next.js compiler settings
 ```
 
@@ -95,7 +95,7 @@ Designed with restraint, typographic hierarchy, and museum-grade editorial care.
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/<your-username>/portfolio.git
+   git clone https://github.com/abhinavkumar-15/portfolio.git
    cd portfolio
    ```
 
@@ -117,32 +117,30 @@ Designed with restraint, typographic hierarchy, and museum-grade editorial care.
 
 ---
 
-## ✦ Deployment
+## ✦ Live Deployment
 
-### Option A: Deploying on Netlify (with Custom Domain)
-This repository includes a preconfigured `netlify.toml`.
+The portfolio is continuously deployed and served via **Vercel** with global Edge CDN caching and automatic SSL (HTTPS):
 
-1. Push your repository to **GitHub**.
-2. Log into [Netlify](https://app.netlify.com/).
-3. Click **"Add new site"** → **"Import an existing project"** → select **GitHub**.
-4. Choose your portfolio repository. Netlify will auto-detect the build command (`npm run build`) and publish directory (`.next`).
-5. Click **"Deploy site"**.
-
-#### Adding Your Custom Domain on Netlify:
-1. In your Netlify dashboard, go to **Site configuration** → **Domain management**.
-2. Click **"Add a domain"** and enter your custom domain (e.g. `abhinavkumar.com` or `abhinav.me`).
-3. Set your DNS records at your domain registrar (GoDaddy, Namecheap, Cloudflare, etc.):
-   - **Apex domain (`@`)**: Point an `A` record to Netlify's IP `75.2.60.5`
-   - **Subdomain (`www`)**: Point a `CNAME` record to `<your-site-name>.netlify.app`
-4. Netlify will automatically provision a **free SSL/TLS certificate (HTTPS)** via Let's Encrypt.
+🔗 **[https://abhinavkumar-dev.vercel.app](https://abhinavkumar-dev.vercel.app)**
 
 ---
 
-### Option B: Deploying on Vercel
-1. Log into [Vercel](https://vercel.com/) with GitHub.
-2. Click **"Add New..."** → **"Project"** → import your portfolio repository.
-3. Click **"Deploy"**.
-4. To add a custom domain, navigate to **Settings** → **Domains** and enter your domain name.
+## ✦ Deployment on Vercel
+
+1. Push your repository to **GitHub**:
+   ```bash
+   git add .
+   git commit -m "feat: portfolio ready for deployment"
+   git push origin main
+   ```
+2. Log into [Vercel](https://vercel.com/) with GitHub.
+3. Import your `portfolio` repository. Vercel automatically detects Next.js Turbopack and starts building.
+4. Every future `git push` to `main` triggers an automatic, zero-downtime production deployment.
+
+### Optional: Custom Domains on Vercel
+To attach a custom domain (e.g. `abhinavkumar.dev` or a free domain):
+1. In your Vercel project dashboard, navigate to **Settings** → **Domains**.
+2. Add your domain. Vercel automatically manages DNS verification and generates free Let's Encrypt SSL certificates.
 
 ---
 
