@@ -125,17 +125,6 @@ The portfolio is continuously deployed and served via **Vercel** with global Edg
 
 ---
 
-## ✦ Deployment on Vercel
-
-1. Push your repository to **GitHub**:
-   ```bash
-   git add .
-   git commit -m "feat: portfolio ready for deployment"
-   git push origin main
-   ```
-2. Log into [Vercel](https://vercel.com/) with GitHub.
-3. Import your `portfolio` repository. Vercel automatically detects Next.js Turbopack and starts building.
-4. Every future `git push` to `main` triggers an automatic, zero-downtime production deployment.
 
 ### Optional: Custom Domains on Vercel
 To attach a custom domain (e.g. `abhinavkumar.dev` or a free domain):
