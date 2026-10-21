@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Abhinav Kumar",
-  title: "Abhinav Kumar — AI · ML · DL · Data Analytics · Bioinformatics",
+  title: "Abhinav Kumar",
   description:
     "Abhinav Kumar is a Computer Science and Engineering undergraduate specializing in AI & Machine Learning at Sreyas Institute of Engineering and Technology, Hyderabad. Focused on Artificial Intelligence, Machine Learning, Deep Learning, Data Analytics, and Bioinformatics.",
   url: "https://abhinavkumar.dev",
